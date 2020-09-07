@@ -3,24 +3,39 @@
     margin: 0;
 }
 
-.banner {
+body {
+    background-color: white;
+}
+
+/*HeaderBlock class with default position around frontpic to create normal flow for content*/
+.headerBlock {
+    width: 100%;
     height: 312px;
-    background-image: url("images/banner.png");
-    background-repeat: no-repeat;
+}
+
+.banner {
+    position: absolute;
+    width: 100%;
+    height: 312px;
+    background-image: url("images/psychologist.png");
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.desktopMenu {
+    display: none;
 }
 
 .topBar {
     width: 100%;
     height: 64px;
+    background-color: rgba(255, 255, 255, 0.7);
     overflow: hidden;
 }
 
-.topBar h2 {
+.logoImg {
+    display: block;
     float: left;
-    padding-top: 16px;
-    padding-left: 16px;
-    font-size: 28px;
 }
 
 .topBar a.icon {
@@ -28,39 +43,137 @@
     padding: 20px 10px;
 }
 
-.appointmentButton {
-    display: block;
-    height: 56px;
-    width: 184px;
-    margin: 0 auto;
-    margin-top: 180px;
-    background-color: #7c9f83; /* Green */
-    border: none;
-    border-radius: 8px;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 12px;
+.mobileMenu {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
-@media only screen and (min-width: 768px) { 
-    .banner {
+.mobileMenu a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    padding: 12px 12px;
+}
+
+.hideMobile {
+    display: none;
+}
+
+.appointmentButton {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -128px;
+    bottom: 4%;
+    background-color: #7c9f83; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.content {
+    width: 100%;
+}
+
+.siteSubTitle {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 48px;
+}
+
+.flexboxContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.flexboxItem {
+    width: 100%;
+}
+
+.flexboxItem img {
+    display: block;
+    height: 40%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 12px 0;
+}
+
+.flexboxItem h2 {
+    text-align: center;
+    padding: 12px 0;
+    font-size: 28px;
+}
+
+.flexboxItem p {
+    padding: 12px 16px;
+    line-height: 1.4;
+}
+
+.aboutUs {
+    width: 100%;
+}
+
+.aboutUs__info {
+
+}
+
+.aboutUs__info img{
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.aboutUs__info p {
+    padding: 12px 16px;
+    line-height: 1.4;
+}
+
+.staffPic {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.footer {
+    width: 100%;
+    background-color: #318CE7;
+}
+
+.footer h2 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer p {
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 10px;
+}
+
+/*Styles for bigger screens*/
+@media only screen and (min-width: 1000px) {
+    /***************/
+    /*Header begins*/
+    /***************/
+    .headerBlock {
         height: 100vh;
-        width: 100%;
-        background-image: url("images/psychologist.png");
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
-    .logoImg {
-        display: block;
-        float: left;
+    .banner {
+        height: 100%;
+        width: 100%;
     }
 
     .topBar {
         width: 100%;
-        height: 260px;
         overflow: hidden;
     }
 
@@ -68,31 +181,98 @@
         display: none;
     }
 
+    #myLinks {
+        display: none;
+    }
+
     .desktopMenu {
-        width: 100%;
-
-    }
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-
-    li {
-        float: right;
-    }
-
-    li a {
         display: block;
-        color: black;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
+        float: right;
+        height: 100%;
     }
 
-    li a:hover {
-        color: #253428;
+    .desktopMenu ul {
+        list-style-type: none;
+        overflow: hidden;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .desktopMenu ul li {
+        float: left;
+        height: 100%;
+    }
+
+    .desktopMenu ul li a {
+        display: block;
+        height: 100%;
+        color: black;
+        padding: 18px 4vw;
+        text-decoration: none;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .desktopMenu ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+    /*Header ends*/
+
+    /****************/
+    /*Content begins*/
+    /****************/
+    .siteSubTitle {
+        padding: 24px 0;
+        text-align: center;
+        font-size: 64px;
+    }
+    
+    .flexboxContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+    
+    .flexboxItem {
+        width: 100%;
+        margin: 0 32px;
+    }
+    
+    .flexboxItem img {
+        display: block;
+        height: 40%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 12px 0;
+    }
+    
+    .flexboxItem h2 {
+        text-align: center;
+        padding: 12px 0;
+        font-size: 28px;
+    }
+    
+    .flexboxItem p {
+        padding: 12px 16px;
+        line-height: 1.4;
+    }
+
+    .aboutUs {
+        width: 100%;
+        height: 60vh;
+        background-image: url("images/bigGroup.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .aboutUs__info {
+        width: 35%;
+        height: 100%;
+    }
+    
+    .aboutUs__info .aboutImg{
+        display: none;
     }
 }
