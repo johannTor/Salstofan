@@ -30,7 +30,25 @@
                 <a href="#">Appointments</a>
                 <a href="#About">About us</a>
             </div>
-            <button type="button" class="appointmentButton">MAKE AN APPOINTMENT</button>
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <h1>Please fill in the form</h1>
+                    <h3>-And we will contact you as soon as possible</h3>
+                    <div class="input-fields">
+                        <label for="name"></label>
+                        <input type="text" placeholder="Name*" name="name" required>
+                    
+                        <label for="phone"></label>
+                        <input type="text" placeholder="Phone*" name="phone" required>
+
+                        <label for="email"></label>
+                        <input type="text" placeholder="Email*" name="email" required>
+                    </div>
+                    <button type="button" class="btn" onclick="closeForm()">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+            </div>
+            <button type="button" class="appointmentButton" id="appointmentButton" onclick="openForm()">MAKE AN APPOINTMENT</button>
         </div>
     </div>
     <main>
