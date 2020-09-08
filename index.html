@@ -7,23 +7,95 @@
     <title>Sálstofan</title>
 </head>
 <body>
-    <div class="banner">
-        <nav class="topBar">
-            <img src="images/logo.png" class="logoImg">
-            <script src="main.js"></script>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <img src="images/icon.png">
-            </a>
-            <div class="desktopMenu">
-                <ul>
-                    <li><a href="#">Staff</a></li>
-                    <li><a href="#">Therapies</a></li>
-                    <li><a href="#">Appointments</a></li>
-                    <li><a href="#">About us</a></li>
-                </ul>
+    <div class="headerBlock">
+        <div class="banner">
+            <nav class="topBar">
+                <img src="images/logo.png" class="logoImg">
+                <script src="main.js"></script>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="images/icon.png">
+                </a>
+                <div class="desktopMenu">
+                    <ul>
+                        <li><a href="#">Staff</a></li>
+                        <li><a href="#Therapies">Therapies</a></li>
+                        <li><a href="#">Appointments</a></li>
+                        <li><a href="#About">About us</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="mobileMenu hideMobile" id="myLinks">
+                <a href="#">Staff</a>
+                <a href="#Therapies">Therapies</a>
+                <a href="#">Appointments</a>
+                <a href="#About">About us</a>
             </div>
-        </nav>
-        <button type="button" class="appointmentButton">MAKE AN APPOINTMENT</button>
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <h1>Please fill in the form</h1>
+                    <h3>-And we will contact you as soon as possible</h3>
+                    <div class="input-fields">
+                        <label for="name"></label>
+                        <input type="text" placeholder="Name*" name="name" required>
+                    
+                        <label for="phone"></label>
+                        <input type="text" placeholder="Phone*" name="phone" required>
+
+                        <label for="email"></label>
+                        <input type="text" placeholder="Email*" name="email" required>
+                    </div>
+                    <button type="button" class="btn" onclick="closeForm()">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+            </div>
+            <button type="button" class="appointmentButton" id="appointmentButton" onclick="openForm()">MAKE AN APPOINTMENT</button>
+        </div>
     </div>
+    <main>
+        <div class="content">
+            <a name="Therapies"></a>
+            <h4 class="siteSubTitle">Therapies</h4>
+            <div class="flexboxContainer">
+                <div class="flexboxItem">
+                    <img src="images/back-of-mans-head.png" alt="therapy-1">
+                    <h2>Therapy 1</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, laboriosam reiciendis distinctio dolorem cum molestiae tempore. Nulla vel dolorum repellat nesciunt nihil ipsam iusto sint. Doloremque mollitia, ad quos deleniti ipsa magnam explicabo reprehenderit sequi iure nihil ut eum ratione, rem veritatis, itaque modi? Saepe laborum tempore illum ad doloremque voluptas consequatur, eaque similique voluptatum ab laboriosam quibusdam suscipit repellat?</p>
+                </div>
+                <div class="flexboxItem">
+                    <img src="images/hair-woman.png" alt="therapy-2">
+                    <h2>Therapy 2</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, laboriosam reiciendis distinctio dolorem cum molestiae tempore. Nulla vel dolorum repellat nesciunt nihil ipsam iusto sint. Doloremque mollitia, ad quos deleniti ipsa magnam explicabo reprehenderit sequi iure nihil ut eum ratione, rem veritatis, itaque modi? Saepe laborum tempore illum ad doloremque voluptas consequatur, eaque similique voluptatum ab laboriosam quibusdam suscipit repellat?</p>
+                </div>
+                <div class="flexboxItem">
+                    <img src="images/sitting-men.png" alt="therapy-3">
+                    <h2>Therapy 3</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, laboriosam reiciendis distinctio dolorem cum molestiae tempore. Nulla vel dolorum repellat nesciunt nihil ipsam iusto sint. Doloremque mollitia, ad quos deleniti ipsa magnam explicabo reprehenderit sequi iure nihil ut eum ratione, rem veritatis, itaque modi? Saepe laborum tempore illum ad doloremque voluptas consequatur, eaque similique voluptatum ab laboriosam quibusdam suscipit repellat?</p>
+                </div>
+            </div>
+            <div class="aboutUs">
+                <div class="aboutUs__info">
+                    <a name="About"></a>
+                    <h4 class="siteSubTitle">About Us</h4>
+                    <img src="images/bigGroup.png" alt="About" class="aboutImg">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, laboriosam reiciendis distinctio dolorem cum molestiae tempore. Nulla vel dolorum repellat nesciunt nihil ipsam iusto sint. Doloremque mollitia, ad quos deleniti ipsa magnam explicabo reprehenderit sequi iure nihil ut eum ratione, rem veritatis, itaque modi? Saepe laborum tempore illum ad doloremque voluptas consequatur, eaque similique voluptatum ab laboriosam quibusdam suscipit repellat?</p>
+                </div>
+            </div>
+            <!--ToDo: Add a slideshow gallery, with javascript?-->
+            <h4 class="siteSubTitle">Staff</h4>
+            <img class="staffPic" src="images/man-in-chair.png" alt="Staff">
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footerContainer">
+                <div class="footerRow">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, aperiam.</p>
+                </div>
+                <div class="footerRow">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, numquam?</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
