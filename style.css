@@ -8,8 +8,20 @@ Fela appointment takkann þegar ýtt er á mobile navbar iconið?
     margin: 0;
 }
 
+
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+
+
 body {
-    background-color: white;
+    background-color: #f9fcf9;
+    font-family: 'Open Sans', sans-serif;
+    
 }
 
 /*HeaderBlock class with default position around banner to create normal flow for content*/
@@ -33,19 +45,23 @@ body {
 
 .topBar {
     width: 100%;
-    height: 64px;
-    background-color: rgba(255, 255, 255, 0.7);
+    height: 4.5rem;
     overflow: hidden;
 }
 
 .logoImg {
     display: block;
     float: left;
+    padding: 0.5rem 1rem;
+}
+
+.logoImg1 {
+    display: none;
 }
 
 .topBar a.icon {
     float: right;
-    padding: 20px 10px;
+    padding: 1.3rem 1rem;
 }
 
 .mobileMenu {
@@ -57,10 +73,11 @@ body {
     display: block;
     text-align: center;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: semibold;
     color: black;
-    padding: 12px 12px;
+    padding: 0.75rem;
 }
 
 .hideMobile {
@@ -80,12 +97,12 @@ body {
     background-color: rgba(128, 128, 128, 0.6);
 }
 
-.form-container h1 {
+.form-container h3 {
     font-size: 28px;
     text-align: center;
 }
 
-.form-container h3 {
+.form-container h5 {
     font-size: 16px;
 }
 
@@ -138,17 +155,50 @@ body {
 .appointmentButton {
     display: block;
     position: absolute;
-    left: 50%;
-    margin-left: -128px;
-    bottom: 4%;
+    left: 30%;
+    margin: auto;
+    bottom: 10%;
     background-color: #7c9f83; /* Green */
+    width: 184px;
     border: none;
+    border-radius: 4px;
     color: white;
-    padding: 15px 32px;
+    padding: 1.25rem 0.5rem;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.01rem;
     cursor: pointer;
+}
+
+.covid-banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 6rem;
+    background-color: #E5ECE6;
+}
+
+br {
+    display: static;
+}
+
+h4  {
+    padding: 1.25rem 3rem 2rem 1rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    color: #485A4B
+    
+}
+.alert-icon {
+    size: 3.rem;
+    padding: 1rem 0;
+    
 }
 
 .content {
@@ -210,11 +260,6 @@ body {
     line-height: 1.4;
 }
 
-.staffPic {
-    display: block;
-    margin: 0 auto;
-    padding: 10px 0;
-}
 
 .footer {
     width: 100%;
@@ -285,13 +330,15 @@ body {
 
     .desktopMenu ul li a {
         display: block;
-        height: 100%;
         color: black;
-        padding: 18px 4vw;
+        padding: 0.5rem 1vw;
+        margin: 2rem;
+        border-radius: 0.25rem;
         text-decoration: none;
         text-align: center;
-        font-size: 18px;
-        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.25rem;
+        font-weight: semibold;
     }
 
     .desktopMenu ul li a:hover {
@@ -371,11 +418,85 @@ body {
       .form-container .btn:hover, .open-button:hover {
         opacity: 1;
       }
+
     /*Header ends*/
 
     /****************/
     /*Content begins*/
     /****************/
+
+    .logoImg {
+        display: none;
+    }
+    
+    .topBar {
+        width: 100%;
+        height: 6.5rem;
+        /*background-color: rgba(255, 255, 255, 0.7);*/
+        background-color: #ffffff50;
+        overflow: hidden;
+    }
+    
+    .logoImg1 {
+        display: block;
+        float: left;
+        padding: 1rem 2rem;
+    
+    }
+
+    .appointmentButton {
+        display: block;
+        position: absolute;
+        width: 14.5rem;
+        left: 25%;
+        bottom: 20%;
+        background-color: #7c9f83; /* Green */
+        border: none;
+        border-radius: 8px;
+        color: white;
+        padding: 1.25rem 0.5rem;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        letter-spacing: 0.01rem;
+        cursor: pointer;
+        transition-duration: 0.2s;
+    }
+    
+
+    .appointmentButton:hover {
+        background-color: #485A4B; /* greyGreen */
+        color: white;
+    }
+
+    .covid-banner {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #E5ECE6;
+    }
+
+    br {
+        display: none;
+    }
+
+    h4  {
+        padding: 1.6rem 1rem 2rem 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        color: #485A4B
+        
+    }
+    .alert-icon {
+        size: 3.75rem;
+        padding: 1rem 0;
+    }
+  
+
+    
     .siteSubTitle {
         padding: 24px 0;
         text-align: center;

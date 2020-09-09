@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Baskerville:wght@700&family=Montserrat:wght@600&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" >
     <title>Sálstofan</title>
 </head>
@@ -10,7 +11,8 @@
     <div class="headerBlock">
         <div class="banner">
             <nav class="topBar">
-                <img src="images/logo.png" class="logoImg">
+                <img class="logoImg" src="images/logo.png" >
+                <img class="logoImg1" src="images/logo1.png" >
                 <script src="main.js"></script>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <img src="images/icon.png">
@@ -32,8 +34,8 @@
             </div>
             <div class="form-popup" id="myForm">
                 <form action="/action_page.php" class="form-container">
-                    <h1>Please fill in the form</h1>
-                    <h3>-And we will contact you as soon as possible</h3>
+                    <h3>Please fill in the form</h3>
+                    <h4>-And we will contact you as soon as possible</h4>
                     <div class="input-fields">
                         <label for="name"></label>
                         <input type="text" placeholder="Name*" name="name" required>
@@ -52,7 +54,11 @@
         </div>
     </div>
     <main>
-        <div class="content">
+        <div class="content"> 
+            <div class="covid-banner">
+                <img class="alert-icon" src="/images/alert-icon.png" alt="">
+                <h4>Measures for<br class="br"> Covid-19</h4>
+            </div>
             <a name="Therapies"></a>
             <h4 class="siteSubTitle">Therapies</h4>
             <div class="flexboxContainer">
@@ -81,8 +87,6 @@
                 </div>
             </div>
             <!--ToDo: Add a slideshow gallery, with javascript?-->
-            <h4 class="siteSubTitle">Staff</h4>
-            <img class="staffPic" src="images/man-in-chair.png" alt="Staff">
         </div>
     </main>
     <footer>
