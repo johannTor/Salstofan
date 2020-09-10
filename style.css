@@ -27,13 +27,13 @@ body {
 /*HeaderBlock class with default position around banner to create normal flow for content*/
 .headerBlock {
     width: 100%;
-    height: 312px;
+    height: 19.5rem;
 }
 
 .banner {
     position: absolute;
     width: 100%;
-    height: 312px;
+    height: 19.5rem;
     background-image: url("images/psychologist.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -66,7 +66,7 @@ body {
 
 .mobileMenu {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #FAFCFE90;
 }
 
 .mobileMenu a {
@@ -133,7 +133,7 @@ body {
 
 /* When the inputs get focus, do something */
 .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-    background-color: #ddd;
+    background-color: #f1f1f1;
     outline: none;
 }
 
@@ -142,19 +142,19 @@ body {
     float: right;
     background-color: #485a4b;
     color: #f9fcf9;
-    padding: 8px 10px;
+    padding: 0.5rem 0.625rem;
     border: none;
     border-radius: 0.25rem;
     cursor: pointer;
     width: 30%;
-    margin: 2em 1.18em 1em 1em;
+    margin: 2rem 1.18rem 1rem 1rem;
     opacity: 0.85;
 }
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
     background-color: #933434;
-    margin: 0 1.18em 0 1em;
+    margin: 0 1.18rem 0 1rem;
 }
 
 /* Add some hover effects to buttons */
@@ -169,7 +169,7 @@ body {
     margin: auto;
     bottom: 10%;
     background-color: #7c9f83; /* Green */
-    width: 184px;
+    width: 11.5rem;
     border: none;
     border-radius: 0.25rem;
     color: #f9fcf9;
@@ -243,7 +243,7 @@ h4  {
     height: 40%;
     width: 100%;
     margin: 0 auto;
-    padding: 12px 0;
+    padding: 0.75rem 0;
 }
 
 .flexboxItem h2 {
@@ -255,13 +255,19 @@ h4  {
 }
 
 .flexboxItem p {
-    padding: 0.75rem 1rem 6rem 1rem;
+    padding: 0.75rem 1rem 4rem 1rem;
     line-height: 1.4;
+    text-align: center;
 }
 
 .aboutUs {
     width: 100%;
 }
+
+.aboutUs h4 {
+    padding: 0 0 3rem 0;
+}
+
 
 .aboutUs__info {
 
@@ -287,17 +293,17 @@ h4  {
 
 .footer h2 {
     text-align: center;
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 
 .footer p {
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-bottom: 10px;
+    padding-left: 0.375rem;
+    padding-right: 0.375rem;
+    padding-bottom: 0.625rem;
 }
 
 /*Styles for bigger screens*/
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 43rem) {
     /***************/
     /*Header begins*/
     /***************/
@@ -318,7 +324,7 @@ h4  {
     .logoImg {
         display: block;
         float: left;
-        padding: 8px 16px;
+        padding: 0.4rem 1rem;
     }
 
     .topBar a.icon {
@@ -361,31 +367,40 @@ h4  {
     }
 
     .desktopMenu ul li a:hover {
-        background-color: rgba(255, 255, 255, 0.95);
+        background-color: #FAFCFE90;
     }
 
     .form-popup {
         display: none;
-        height: 80vh;
+        height: 70vh;
         margin-top: 4vh;
-        margin-bottom: 4vh;
+        margin-bottom: 4vh;;
     }
       
       /* Add styles to the form container */
       .form-container {
-        max-width: 500px;
-        padding: 10px;
+        max-width: 31.25rem;
+        padding: 0.625rem;
         margin: 0 auto;
-        background-color: rgba(128, 128, 128, 0.6);
+        background-color: #80808080;
+        border-radius: 0.25rem;
       }
     
-    .form-container h1 {
-        font-size: 32px;
-        text-align: left;
+    .form-container h4 {
+        font-size: 2rem;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem;
+        color: #253428;
     }
 
-    .form-container h3 {
-        font-size: 18px;
+    .form-container h5 {
+        font-size: 1.125;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        color: #253428;
     }
 
     .form-container .input-fields {
@@ -397,32 +412,32 @@ h4  {
       /* Full-width input fields */
       .form-container input[type=text], .form-container input[type=password] {
         width: 100%;
-        padding-left: 10px;
-        margin: 16px 4px;
-        width: 24em;
-        height: 40px;
+        padding-left: 0.625rem;
+        margin: 1rem 0.25rem;
+        width: 25.8em;
+        height: 2.5rem;
         border: none;
-        font-size: 18px;
+        font-size: 1.125rem;
         background: #f1f1f1;
       }
       
       /* When the inputs get focus, do something */
       .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-        background-color: #ddd;
+        background-color: #f1f1f1;
         outline: none;
       }
-      
+
       /* Set a style for the submit/login button */
       .form-container .btn {
         display: block;
         float: none;
-        background-color: #4CAF50;
+        background-color: #485a4b;
         color: white;
-        padding: 16px 20px;
+        padding: 1rem 1.25rem;
         border: none;
         cursor: pointer;
         width: 50%;
-        margin-bottom:10px;
+        margin-bottom: 0.625rem;
         margin-left: auto;
         margin-right: auto;
         opacity: 0.8;
@@ -430,7 +445,7 @@ h4  {
       
       /* Add a red background color to the cancel button */
       .form-container .cancel {
-        background-color: red;
+        background-color: #933434;
       }
       
       /* Add some hover effects to buttons */
@@ -517,13 +532,13 @@ h4  {
         size: 3.75rem;
         padding: 1rem 0;
     }
-  
-
     
     .siteSubTitle {
-        padding: 24px 0;
+        padding: 4.24rem 0 1rem 0;
         text-align: center;
-        font-size: 64px;
+        font-size: 4rem;
+        font-family: 'Libre Baskerville', serif;
+        font-weight: bold;
     }
     
     .flexboxContainer {
@@ -531,29 +546,31 @@ h4  {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: stretch;
+        overflow: hidden;
     }
     
     .flexboxItem {
         width: 100%;
-        margin: 0 32px;
+        margin: 0 2rem;
     }
     
     .flexboxItem img {
         display: block;
         height: 40%;
         width: 100%;
-        margin: 0 auto;
-        padding: 12px 0;
+        margin: 3rem auto;
+        border-radius: 0.2rem;
+        
     }
     
     .flexboxItem h2 {
         text-align: center;
-        padding: 12px 0;
-        font-size: 28px;
+        padding: 0.75rem 0;
+        font-size: 1.75rem;
     }
     
     .flexboxItem p {
-        padding: 12px 16px;
+        padding: 0.75rem 1rem;
         line-height: 1.4;
     }
 
@@ -566,8 +583,10 @@ h4  {
     }
 
     .aboutUs__info {
-        width: 35%;
+        width: 40%;
         height: 100%;
+        margin-left: 2rem;
+        overflow: hidden;
     }
     
     .aboutUs__info .aboutImg{
@@ -576,7 +595,7 @@ h4  {
 
     .footer {
         width: 100%;
-        height: 208px;
+        height: 13rem;
         background-color: #7c9f83;
     }
 
@@ -592,7 +611,7 @@ h4  {
     .footerRow {
         height: 100%;
         width: 100%;
-        margin: 10px 0;
+        margin: 0.625rem 0;
         background-color: gray;
     }
 }
