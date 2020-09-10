@@ -216,6 +216,57 @@ body {
     padding: 10px 0;
 }
 
+.wrapper {
+    display: grid;
+    /*height: 40%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 12px 0;*/
+        margin: 0;
+        /*grid-template-columns: 1fr 1fr 1fr;*/
+        grid-template-columns:repeat(1, 1fr);
+        gap: -1rem;
+        /*grid-auto-rows: 100px; /*Height is fixed*/
+        /*grid-auto-rows: minmax(70px, auto); Height is fixed but increases if content overlaps*/
+        
+}
+.about-staff {
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    padding: 3.625rem;
+    font-family: 'Libre Baskerville', serif;
+}
+.staff-image {
+    max-width: 200px;
+    min-width: 100px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 4rem;
+}
+
+h5 {
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.125rem;
+}
+
+small {
+    display: block;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding-bottom: 100px;
+    
+}
+
 .footer {
     width: 100%;
     background-color: #318CE7;
@@ -430,6 +481,65 @@ body {
         display: none;
     }
 
+    .about-staff {
+        margin: auto;
+        width: 70%;
+        text-align: center;
+        padding: 3.625rem;
+        font-family: 'Libre Baskerville', serif;
+    }
+    
+    .about-staff h2 {
+        margin-bottom: 2rem;
+        
+    }
+
+    .wrapper {
+        display: grid;
+        margin: 1rem 3rem 4rem 3rem;
+        /*grid-template-columns: 1fr 1fr 1fr;*/
+        grid-template-columns:repeat(5, 1fr);
+        gap: -1rem;
+        /*grid-auto-rows: 100px; /*Height is fixed*/
+        /*grid-auto-rows: minmax(70px, auto); Height is fixed but increases if content overlaps*/
+        
+    }
+    
+    .wrapper > div {
+        margin: auto;
+        padding: 1rem 0;
+    }
+    
+    .staff-image {
+       max-width: 200px;
+       min-width: 100px;
+       height: auto;
+    }
+    
+    h2 {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 4rem;
+    }
+    
+    h5 {
+        text-align: center;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing: 0.125rem;
+    }
+    
+    small {
+        display: block;
+        text-align: center;
+        font-size: 0.875rem;
+        font-weight: 600;
+        padding-bottom: 100px;
+    }
+
+    /****************/
+    /*Footer begins*/
+    /****************/
     .footer {
         width: 100%;
         height: 208px;
@@ -445,10 +555,39 @@ body {
         overflow: hidden;
     }
 
-    .footerRow {
+    .footerTop {
+        text-align: center;
+        color: #fff;
+        margin-top: 104px;
+        margin-bottom:15px;
+        margin-left: 35px;
+        margin-right: 35px;
+        border-bottom:2px solid #fff;
+        padding-bottom:15px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.02em;
+    }
+
+    .footerBottomLeft {
+        color:#fff;
+        padding:15px 0px 45px 30px;
+        width: 100%;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.02em;
+    }
+    
+    /*.footerBottomRight {
         height: 100%;
         width: 100%;
-        margin: 10px 0;
-        background-color: gray;
-    }
+        margin: 10px 32px;
+        background-color: #7c9f83;
+    }*/
 }
