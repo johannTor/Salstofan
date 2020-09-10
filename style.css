@@ -191,7 +191,7 @@ body {
     background-color: #E5ECE6;
 }
 
-br {
+.covid-br {
     display: static;
 }
 
@@ -562,7 +562,7 @@ small {
         background-color: #E5ECE6;
     }
 
-    br {
+    .covid-br {
         display: none;
     }
 
