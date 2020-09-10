@@ -8,20 +8,32 @@ Fela appointment takkann þegar ýtt er á mobile navbar iconið?
     margin: 0;
 }
 
+
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+
+
 body {
-    background-color: white;
+    background-color: #f9fcf9;
+    font-family: 'Open Sans', sans-serif;
+    
 }
 
 /*HeaderBlock class with default position around banner to create normal flow for content*/
 .headerBlock {
     width: 100%;
-    height: 312px;
+    height: 19.5rem;
 }
 
 .banner {
     position: absolute;
     width: 100%;
-    height: 312px;
+    height: 19.5rem;
     background-image: url("images/psychologist.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -33,34 +45,39 @@ body {
 
 .topBar {
     width: 100%;
-    height: 64px;
-    background-color: rgba(255, 255, 255, 0.7);
+    height: 4.5rem;
     overflow: hidden;
 }
 
 .logoImg {
     display: block;
     float: left;
+    padding: 0.5rem 1rem;
+}
+
+.logoImg1 {
+    display: none;
 }
 
 .topBar a.icon {
     float: right;
-    padding: 20px 10px;
+    padding: 1.3rem 1rem;
 }
 
 .mobileMenu {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #FAFCFE90;
 }
 
 .mobileMenu a {
     display: block;
     text-align: center;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: semibold;
     color: black;
-    padding: 12px 12px;
+    padding: 0.75rem;
 }
 
 .hideMobile {
@@ -70,64 +87,74 @@ body {
 /* The popup form - hidden by default */
 .form-popup {
     display: none;
-    height: 248px; /*248 is the height of the banner minus the height of the topBar */
+    height: 15rem; /*15.5rem is the height of the banner minus the height of the topBar */
 }
   
 /* Add styles to the form container */
 .form-container {
     width: 100%;
     height: 100%;
-    background-color: rgba(128, 128, 128, 0.6);
+    background-color: #80808080;
 }
 
-.form-container h1 {
-    font-size: 28px;
+.form-container h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
     text-align: center;
+    padding: 1rem;
+    color: #253428;
 }
 
-.form-container h3 {
-    font-size: 16px;
+.form-container h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: #253428;
 }
 
 .form-container .input-fields {
     width: 50%;
     float: left;
+    
 }
   
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=password] {
     display: block;
     width: 100%;
-    padding-left: 5px;
+    padding: 0.5rem 1rem;
     margin: 2vh 4vw;
-    width: 14em;
+    width: 12em;
     border: none;
-    font-size: 12px;
+    border-radius: 0.15rem;
+    font-size: 0.625rem;
     background: #f1f1f1;
 }
 
 /* When the inputs get focus, do something */
 .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-    background-color: #ddd;
+    background-color: #f1f1f1;
     outline: none;
 }
 
 /* Set a style for the submit/login button */
 .form-container .btn {
     float: right;
-    background-color: #4CAF50;
-    color: white;
-    padding: 8px 10px;
+    background-color: #485a4b;
+    color: #f9fcf9;
+    padding: 0.5rem 0.625rem;
     border: none;
+    border-radius: 0.25rem;
     cursor: pointer;
     width: 30%;
-    margin: 0.5em 1em;
-    opacity: 0.8;
+    margin: 2rem 1.18rem 1rem 1rem;
+    opacity: 0.85;
 }
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-    background-color: red;
+    background-color: #933434;
+    margin: 0 1.18rem 0 1rem;
 }
 
 /* Add some hover effects to buttons */
@@ -138,17 +165,54 @@ body {
 .appointmentButton {
     display: block;
     position: absolute;
-    left: 50%;
-    margin-left: -128px;
-    bottom: 4%;
+    left: 30%;
+    margin: auto;
+    bottom: 10%;
     background-color: #7c9f83; /* Green */
+    width: 11.5rem;
     border: none;
-    color: white;
-    padding: 15px 32px;
+    border-radius: 0.25rem;
+    color: #f9fcf9;
+    padding: 1.25rem 0.5rem;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.01rem;
     cursor: pointer;
+}
+
+.covid-banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 6rem;
+    background-color: #E5ECE6;
+}
+
+br {
+    display: static;
+}
+
+h4  {
+    padding: 1.25rem 3rem 2rem 1rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    color: #485A4B
+    
+}
+
+.covid-link {
+    text-decoration: none;
+ }
+
+.alert-icon {
+    size: 3.rem;
+    padding: 1rem 0;
 }
 
 .content {
@@ -156,9 +220,11 @@ body {
 }
 
 .siteSubTitle {
-    padding: 10px 0;
+    padding: 4.24rem 0;
     text-align: center;
-    font-size: 48px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3.5rem;
+    font-weight: bold;
 }
 
 .flexboxContainer {
@@ -177,23 +243,31 @@ body {
     height: 40%;
     width: 100%;
     margin: 0 auto;
-    padding: 12px 0;
+    padding: 0.75rem 0;
 }
 
 .flexboxItem h2 {
     text-align: center;
-    padding: 12px 0;
-    font-size: 28px;
+    padding: 2.5rem 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: semibold;
 }
 
 .flexboxItem p {
-    padding: 12px 16px;
+    padding: 0.75rem 1rem 4rem 1rem;
     line-height: 1.4;
+    text-align: center;
 }
 
 .aboutUs {
     width: 100%;
 }
+
+.aboutUs h4 {
+    padding: 0 0 3rem 0;
+}
+
 
 .aboutUs__info {
 
@@ -203,18 +277,14 @@ body {
     height: 40vh;
     width: 100%;
     object-fit: cover;
+    padding-bottom: 3rem;
 }
 
 .aboutUs__info p {
-    padding: 12px 16px;
+    padding: 0rem 1rem 2rem 1rem;
     line-height: 1.4;
 }
 
-.staffPic {
-    display: block;
-    margin: 0 auto;
-    padding: 10px 0;
-}
 
 .wrapper {
     display: grid;
@@ -274,17 +344,17 @@ small {
 
 .footer h2 {
     text-align: center;
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 
 .footer p {
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-bottom: 10px;
+    padding-left: 0.375rem;
+    padding-right: 0.375rem;
+    padding-bottom: 0.625rem;
 }
 
 /*Styles for bigger screens*/
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 43rem) {
     /***************/
     /*Header begins*/
     /***************/
@@ -305,7 +375,7 @@ small {
     .logoImg {
         display: block;
         float: left;
-        padding: 8px 16px;
+        padding: 0.4rem 1rem;
     }
 
     .topBar a.icon {
@@ -336,41 +406,52 @@ small {
 
     .desktopMenu ul li a {
         display: block;
-        height: 100%;
         color: black;
-        padding: 18px 4vw;
+        padding: 0.5rem 1vw;
+        margin: 2rem;
+        border-radius: 0.25rem;
         text-decoration: none;
         text-align: center;
-        font-size: 18px;
-        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.25rem;
+        font-weight: semibold;
     }
 
     .desktopMenu ul li a:hover {
-        background-color: rgba(255, 255, 255, 0.95);
+        background-color: #FAFCFE90;
     }
 
     .form-popup {
         display: none;
-        height: 80vh;
+        height: 70vh;
         margin-top: 4vh;
-        margin-bottom: 4vh;
+        margin-bottom: 4vh;;
     }
       
       /* Add styles to the form container */
       .form-container {
-        max-width: 500px;
-        padding: 10px;
+        max-width: 31.25rem;
+        padding: 0.625rem;
         margin: 0 auto;
-        background-color: rgba(128, 128, 128, 0.6);
+        background-color: #80808080;
+        border-radius: 0.25rem;
       }
     
-    .form-container h1 {
-        font-size: 32px;
-        text-align: left;
+    .form-container h4 {
+        font-size: 2rem;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem;
+        color: #253428;
     }
 
-    .form-container h3 {
-        font-size: 18px;
+    .form-container h5 {
+        font-size: 1.125;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        color: #253428;
     }
 
     .form-container .input-fields {
@@ -382,32 +463,32 @@ small {
       /* Full-width input fields */
       .form-container input[type=text], .form-container input[type=password] {
         width: 100%;
-        padding-left: 10px;
-        margin: 16px 4px;
-        width: 24em;
-        height: 40px;
+        padding-left: 0.625rem;
+        margin: 1rem 0.25rem;
+        width: 25.8em;
+        height: 2.5rem;
         border: none;
-        font-size: 18px;
+        font-size: 1.125rem;
         background: #f1f1f1;
       }
       
       /* When the inputs get focus, do something */
       .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-        background-color: #ddd;
+        background-color: #f1f1f1;
         outline: none;
       }
-      
+
       /* Set a style for the submit/login button */
       .form-container .btn {
         display: block;
         float: none;
-        background-color: #4CAF50;
+        background-color: #485a4b;
         color: white;
-        padding: 16px 20px;
+        padding: 1rem 1.25rem;
         border: none;
         cursor: pointer;
         width: 50%;
-        margin-bottom:10px;
+        margin-bottom: 0.625rem;
         margin-left: auto;
         margin-right: auto;
         opacity: 0.8;
@@ -415,22 +496,100 @@ small {
       
       /* Add a red background color to the cancel button */
       .form-container .cancel {
-        background-color: red;
+        background-color: #933434;
       }
       
       /* Add some hover effects to buttons */
       .form-container .btn:hover, .open-button:hover {
         opacity: 1;
       }
+
     /*Header ends*/
 
     /****************/
     /*Content begins*/
     /****************/
-    .siteSubTitle {
-        padding: 24px 0;
+
+    .logoImg {
+        display: none;
+    }
+    
+    .topBar {
+        width: 100%;
+        height: 6.5rem;
+        /*background-color: rgba(255, 255, 255, 0.7);*/
+        background-color: #ffffff50;
+        overflow: hidden;
+    }
+    
+    .logoImg1 {
+        display: block;
+        float: left;
+        padding: 1rem 2rem;
+    
+    }
+
+    .appointmentButton {
+        display: block;
+        position: absolute;
+        width: 14.5rem;
+        left: 25%;
+        bottom: 20%;
+        background-color: #7c9f83; /* Green */
+        border: none;
+        border-radius: 0.5rem;
+        color: white;
+        padding: 1.25rem 0.5rem;
         text-align: center;
-        font-size: 64px;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        letter-spacing: 0.01rem;
+        cursor: pointer;
+        transition-duration: 0.2s;
+    }
+    
+
+    .appointmentButton:hover {
+        background-color: #485A4B; /* greyGreen */
+        color: white;
+    }
+
+    .covid-banner {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #E5ECE6;
+    }
+
+    br {
+        display: none;
+    }
+
+    h4 {
+        padding: 1.6rem 1rem 2rem 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        color: #485A4B;
+    }
+
+    .covid-link {
+       text-decoration: none;
+    }
+
+    .alert-icon {
+        size: 3.75rem;
+        padding: 1rem 0;
+    }
+    
+    .siteSubTitle {
+        padding: 4.24rem 0 1rem 0;
+        text-align: center;
+        font-size: 4rem;
+        font-family: 'Libre Baskerville', serif;
+        font-weight: bold;
     }
     
     .flexboxContainer {
@@ -438,29 +597,31 @@ small {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: stretch;
+        overflow: hidden;
     }
     
     .flexboxItem {
         width: 100%;
-        margin: 0 32px;
+        margin: 0 2rem;
     }
     
     .flexboxItem img {
         display: block;
         height: 40%;
         width: 100%;
-        margin: 0 auto;
-        padding: 12px 0;
+        margin: 3rem auto;
+        border-radius: 0.2rem;
+        
     }
     
     .flexboxItem h2 {
         text-align: center;
-        padding: 12px 0;
-        font-size: 28px;
+        padding: 0.75rem 0;
+        font-size: 1.75rem;
     }
     
     .flexboxItem p {
-        padding: 12px 16px;
+        padding: 0.75rem 1rem;
         line-height: 1.4;
     }
 
@@ -473,8 +634,10 @@ small {
     }
 
     .aboutUs__info {
-        width: 35%;
+        width: 40%;
         height: 100%;
+        margin-left: 2rem;
+        overflow: hidden;
     }
     
     .aboutUs__info .aboutImg{
@@ -542,7 +705,7 @@ small {
     /****************/
     .footer {
         width: 100%;
-        height: 208px;
+        height: 13rem;
         background-color: #7c9f83;
     }
 
