@@ -8,30 +8,31 @@
     <title>Sálstofan</title>
 </head>
 <body>
-    <div class="headerBlock">
+    <div class="header-block">
         <div class="banner">
-            <nav class="topBar">
+            <nav class="top-bar">
                 <img class="logoImg" src="images/logo.png" >
                 <img class="logoImg1" src="images/logo1.png" >
                 <script src="main.js"></script>
                 <a href="javascript:void(0);" class="icon" id="burger" onclick="myFunction()">
                     <img src="images/icon.png">
                 </a>
+                <!--Desktop Menu-->
                 <div class="desktopMenu">
                     <ul>
-                        <li><a href="#Staff">Staff</a></li>
                         <li><a href="#Therapies">Therapies</a></li>
-                        <li><a href="#">Appointments</a></li>
                         <li><a href="#About">About us</a></li>
+                        <li><a href="#Staff">Staff</a></li>
                     </ul>
                 </div>
             </nav>
+            <!--Mobile Menu-->
             <div class="mobileMenu hideMobile" id="myLinks">
-                <a href="#">Staff</a>
                 <a href="#Therapies">Therapies</a>
-                <a href="#">Appointments</a>
                 <a href="#About">About us</a>
+                <a href="#Staff">Staff</a>
             </div>
+            <!--Appointment form-->
             <div class="form-popup" id="myForm">
                 <form action="/action_page.php" class="form-container">
                     <h4>Please fill in the form</h4>
@@ -54,14 +55,14 @@
         </div>
     </div>
     <main>
-        <div class="content"> 
+        <div class="content">
             <div class="covid-banner">
-                <img class="alert-icon" src="/images/alert-icon.png" alt="">
-                <a  class="covid-link" href="#"><h4>Measures for<br class="br"> Covid-19</h4></a>
+                <img class="alert-icon" src="images/alert-icon.png" alt="">
+                <a class="covid-link" href="#"><h4>Measures for<br class="br"> Covid-19</h4></a>
             </div>
             <a name="Therapies"></a>
             <h4 class="siteSubTitle">Therapies</h4>
-            <div class="flexboxContainer">
+            <div class="therapies-flexbox">
                 <div class="flexboxItem">
                     <img src="images/depression.png" alt="therapy-1">
                     <h2>Depression</h2>
@@ -76,8 +77,7 @@
                     <img src="images/panicattacks.png" alt="therapy-3">
                     <h2>Panic Attacks</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, dolorum iure officia beatae soluta aspernatur autem sunt? Quis perspiciatis soluta, fugit consectetur veritatis ratione? Odit, similique, autem debitis numquam dicta qui labore quidem ad perferendis temporibus aperiam consequuntur, blanditiis natus.</p>
-
-                    </div>
+                </div>
             </div>
             <div class="aboutUs">
                 <div class="aboutUs__info">
@@ -88,8 +88,6 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quasi quidem. Necessitatibus fuga porro voluptates tempora incidunt quo eius, doloribus quis velit maiores.</p>
                 </div>
             </div>
-
-            <!--ToDo: Add a slideshow gallery, potentially with javascript?-->
             <div class="about-staff">
                 <a name="Staff"></a>
                 <h2>Staff</h2>
@@ -159,9 +157,9 @@
                 <div class="footerBottomLeft">
                     <p>Sálstofan © 2020 </p>
                     <div class="footerBottomRight"></div>
-                        <img style="float: right; margin: -50px 65px 50px 15px;" src="images/twitter_white.png" alt="twitter">     
-                        <img style="float: right; margin: -50px 65px 50px 15px;" src="images/instagram_white.png" alt="insta">
-                        <img style="float: right; margin: -50px 65px 50px 15px;" src="images/facebook_white.png" alt="book">
+                    <a href="https://www.twitter.com" target="_blank"> <img style="float: right; margin: -50px 65px 50px 15px;" src="images/twitter_white.png" alt="twitter">     
+                    <a href="https://www.instagram.com/" target="_blank"> <img style="float: right; margin: -50px 65px 50px 15px;" src="images/instagram_white.png" alt="insta">
+                    <a href="https://www.facebook.com/" target="_blank"> <img style="float: right; margin: -50px 65px 50px 15px;" src="images/facebook_white.png" alt="book">
                 </div>
             </div>
         </div>
